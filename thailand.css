@@ -75,3 +75,7 @@ image {
         transform: translateX(2000px);
     }
 }
+
+.pointing-left {
+    display: flex;
+}
