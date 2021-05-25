@@ -1,7 +1,6 @@
 header {
     display: flex;
-    border: solid royalblue 5px;
-    background-color: black;
+    background-color: rgba(185, 40, 178, 0.596);
 }
 
 .navImg {
@@ -10,7 +9,7 @@ header {
 }
 
 .navImg img {
-    width: 8em;
+    width: 4em;
 }
 
 .logo {
@@ -29,6 +28,10 @@ body {
     text-align: center;
     font-size: 33px;
     font-family: cursive;
+}
+
+a {
+    color: white;
 }
 
 image {
@@ -50,6 +53,7 @@ image {
     font-size: 60px;
     animation: blink 0.8s linear infinite;
     text-align: center;
+    font-family: cursive;
   }
 
   li {
@@ -79,18 +83,29 @@ image {
     padding: 200px;
     margin: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-    transition: 5s cubic-bezier(0.4, 0, 1, 1);
+    transition: 10s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .name {
-    font-size: 25px;
+    font-size: 50px;
     color: darkblue;
-    background-color:black
+}
+.country_name {
+    background-color:rgba(185, 40, 178, 0.596);
 }
 
 img:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
+  }
+
+.navBar:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+.navigation:hover {
+      font-size: 13px;
   }
   
   @keyframes shake {
@@ -107,11 +122,3 @@ img:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
-  .navBar:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-  }
-  
-  .navigation:hover {
-      font-size: 13px;
-  }
