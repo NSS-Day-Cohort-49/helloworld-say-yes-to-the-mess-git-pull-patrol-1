@@ -1,0 +1,59 @@
+.welcome-images {
+    display: flex;
+    flex-wrap: wrap;
+    border: double 3em;
+    height: auto;
+    background-color: lawngreen;
+    background-image: url(https://media.giphy.com/media/XrnJ3ofl5DCtG/giphy.gif);
+    justify-content: space-around;
+}
+.links-to-pages{
+    display: flex;
+    flex-direction: row;
+    background: green;
+    flex-direction: column;
+    border:inset hotpink 20px;
+    font-style: oblique;
+    font-size: 60px;
+    flex: 0.5;
+    justify-content: space-between;
+    width: max-content;
+}
+.links-and-walking-img{
+    display: flex;
+}
+.links-to-pages ul {
+    width: fit-content;
+    animation: blink 0.8s linear infinite;
+    color: red;
+    flex: 1;
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.9;
+    }
+}
+.walking-sticker{
+    flex: 2;
+    background-color:rgba(105, 105, 105, 0.8);
+}
+.walking-sticker img{
+    flex: 3;
+    max-height: 450px;
+    width: max-content;
+}
+body{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-eAI7CMeDhVk%2FTi__onOXXnI%2FAAAAAAAAA64%2FHlGo_0g4TQw%2Fs1600%2F20.jpg&f=1&nofb=1);
+}
+.upper-box{
+    border: solid red;
+    background-color: black;
+    font: 58px bolder;
+    color: white;
+    text-align: center;
+    background-image: url(https://media.giphy.com/media/3oKIPhxtCqLe49VI08/giphy.gif);
+    height: 8em;
+}
