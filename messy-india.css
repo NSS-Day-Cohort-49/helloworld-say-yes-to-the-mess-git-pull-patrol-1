@@ -68,11 +68,26 @@ image {
   border: dotted orange 3px;
   padding: 8px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-  text-shadow: 2px 4px 0px rgba(0, 0.8, 0, 0.8);
+  text-shadow: 2px 2px 0px rgba(1, 1, 0, 0.938);
 }
 
 .name {
   font-size: 50px;
   color: crimson;
   border: 5px dotted blue;
+  animation: shake 10s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(1000px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
 }
