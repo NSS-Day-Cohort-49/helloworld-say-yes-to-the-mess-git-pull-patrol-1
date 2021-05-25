@@ -1,0 +1,117 @@
+header {
+    display: flex;
+    border: solid royalblue 5px;
+    background-color: black;
+}
+
+.navImg {
+    flex: 1;
+    max-width: fit-content;
+}
+
+.navImg img {
+    width: 8em;
+}
+
+.logo {
+    border-radius: 20;
+}
+
+body {
+    background-image: url(https://acegif.com/wp-content/gifs/greece-flag-2.gif);
+    background-color: yellow;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.navBar {
+    flex: 3;
+    text-align: center;
+    font-size: 33px;
+    font-family: cursive;
+}
+
+image {
+    border-radius: 1spx;
+}
+
+.country_image img {
+    max-width: 40em;
+}
+
+.clz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info_head {
+    color: darkblue;
+    font-size: 60px;
+    animation: blink 0.8s linear infinite;
+    text-align: center;
+  }
+
+  li {
+    font-family: fantasy;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.info {
+    font-size: 20px;
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 26px;
+    padding: 200px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    transition: 5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.name {
+    font-size: 25px;
+    color: darkblue;
+    background-color:black
+}
+
+img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  .navBar:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .navigation:hover {
+      font-size: 13px;
+  }
