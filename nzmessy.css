@@ -1,0 +1,119 @@
+header {
+    display: flex;
+    border: double green 5px;
+}
+
+.navImg {
+    flex: 1;
+    max-width: fit-content;
+}
+
+.navImg img {
+    width: 8em;
+}
+
+.logo {
+    flex: 1;
+    max-width: fit-content;
+ }
+ .logo img {
+   width: 8em;
+ }
+ 
+ body {
+    
+    background-image: url(https://fscomps.fotosearch.com/bigcomps/CSP/CSP425/k32818138.jpg);
+    }
+
+ .navBar {
+    border: solid green 5px;
+    padding: 5px;
+}
+.image {
+    animation: shake 10s infinite;
+                    }
+                    @keyframes shake {
+                        0% {
+                            transform: translateX(0px)
+                        }
+                        25% {
+                            transform: translateX(1000px);
+                        }
+                        50% {
+                            transform: translateX(-50px);
+                        }
+                        100% {
+                            transform: translateX(2000px);
+   
+    
+}
+                    }
+.clz {
+    display: flex;
+    flex-wrap: wrap;
+           
+}
+
+.cities {
+    border: solid green 2px;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.landmarks {
+    border: solid green 2px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.citizens {
+    border: solid green 2px;
+    margin: 5px;
+    padding: 5px;
+}
+
+body {
+    background-color: lightblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.navBar {
+    flex: 3;
+    text-align: center;
+    font-size: 33px;
+    background-color: greenyellow;
+}
+
+.image {
+    border-radius: 1spx;
+}
+
+.country_image img {
+    max-width: 40em;
+}
+
+.clz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info_head {
+    text-align: center;
+}
+
+.info {
+    font-size: 18px;
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 26px;
+    padding: 8px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+
