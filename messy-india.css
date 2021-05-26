@@ -34,7 +34,7 @@ body {
   transform: translateY(120px);
 }
 
-image {
+.image {
   border-radius: 1px;
 }
 
