@@ -78,4 +78,5 @@ image {
 
 .pointing-left {
     display: flex;
+    justify-content: flex-end;
 }
