@@ -43,16 +43,19 @@ image {
 
 .info_head {
     text-align: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
 }
 
 .info {
     font-size: 18px;
-    background-color: white;
+    background-color: rgba(6, 248, 248, 0.973);
+    color: rgb(153, 255, 0);
     border: solid white 1px;
     border-radius: 26px;
     padding: 8px;
     margin: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    font-family: 'Pattaya', sans-serif;
 }
 
 .name {
@@ -79,4 +82,32 @@ image {
 .pointing-left {
     display: flex;
     justify-content: flex-end;
+}
+
+.welcome {
+    color: hotpink;
+    animation: blink 0.3s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+}
+
+.welcome2 {
+    color: rgb(59, 37, 184);
+    animation: blink 0.3s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
 }
