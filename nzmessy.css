@@ -1,6 +1,13 @@
 header {
     display: flex;
     border: double green 5px;
+   
+    }
+
+
+    }
+    a:hover {
+        color: #ff0000;
 }
 
 .navImg {
@@ -10,6 +17,7 @@ header {
 
 .navImg img {
     width: 8em;
+    
 }
 
 .logo {
@@ -48,6 +56,20 @@ header {
     
 }
                     }
+.name {
+    font-size: 130px;
+    animation:blinkingText 1.2s infinite;
+    font-style: oblique;
+}
+@keyframes blinkingText{
+    0%{     color: lawngreen;    }
+    49%{    color: lawngreen; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+    
+}                    
 .clz {
     display: flex;
     flex-wrap: wrap;
@@ -58,6 +80,7 @@ header {
     border: solid green 2px;
     margin: 5px;
     padding: 5px;
+    
     
 }
 
