@@ -43,16 +43,19 @@ image {
 
 .info_head {
     text-align: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
 }
 
 .info {
     font-size: 18px;
-    background-color: white;
+    background-color: rgba(6, 248, 248, 0.973);
+    color: rgb(153, 255, 0);
     border: solid white 1px;
     border-radius: 26px;
     padding: 8px;
     margin: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    font-family: 'Pattaya', sans-serif;
 }
 
 .name {
@@ -71,11 +74,105 @@ image {
     50% {
         transform: translateX(-50px);
     }
+    75% {
+        transform: translateX(0px);
+    }
     100% {
         transform: translateX(2000px);
     }
 }
 
+.sound {
+    animation: fadeIn linear infinite 5s;
+    -webkit-animation: fadeIn linear infinite 5s;
+    -moz-animation: fadeIn linear infinite 5s;
+    -o-animation: fadeIn linear infinite 5s;
+    -ms-animation: fadeIn linear infinite 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .pointing-left {
     display: flex;
+    justify-content: flex-end;
+    animation: blink 0.1s infinite;
+}
+
+.pointing-down:hover {
+    animation: shake 0.2s infinite;
+}
+
+.pointing-up:hover {
+    animation: shake 0.2s infinite;
+}
+
+.welcome {
+    color: hotpink;
+    animation: blink 0.3s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+}
+
+.welcome2 {
+    color: rgb(59, 37, 184);
+    animation: blink 0.3s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
 }
