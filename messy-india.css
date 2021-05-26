@@ -21,21 +21,26 @@ body {
   background-image: url("https://specials-images.forbesimg.com/imageserve/605e4c8e40e0e386562fa785/960x0.jpg?cropX1=0&cropX2=3121&cropY1=1001&cropY2=2474");
   background-position: center;
   background-repeat: repeat;
+  cursor: help;
 }
 
 .navBar {
-  flex: 3;
   text-align: center;
   font-size: 33px;
-  background-color: greenyellow;
+  background-color: rgba(212, 173, 0, 0.87);
 }
 
-image {
-  border-radius: 1spx;
+.navBar:hover {
+  transform: translateY(120px);
+}
+
+.image {
+  border-radius: 1px;
 }
 
 .country_image img {
   max-width: 40em;
+  animation: scroll_lr 20s linear infinite;
 }
 
 .clz {
@@ -50,34 +55,39 @@ image {
   animation: blink 0.8s linear infinite;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.9;
-  }
-}
-
 .info {
   width: 25%;
   display: flex;
-  font-size: 18px;
+  font-size: 14px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   color: orange;
   background-color: white;
   border: dotted orange 3px;
   padding: 8px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-  text-shadow: 2px 2px 0px rgba(1, 1, 0, 0.938);
+  text-shadow: 2px 3px 1px rgba(45, 114, 18, 0.8);
 }
 
 .name {
   font-size: 50px;
   color: crimson;
   border: 5px dotted blue;
-  animation: shake 10s infinite;
 }
-@keyframes shake {
+
+.name h1 {
+  animation: scroll_bnf 10s linear infinite, blink 1.5s linear infinite;
+}
+
+@keyframes scroll_lr {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
+
+@keyframes scroll_bnf {
   0% {
     transform: translateX(0px);
   }
@@ -89,5 +99,17 @@ image {
   }
   100% {
     transform: translateX(2000px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
   }
 }
