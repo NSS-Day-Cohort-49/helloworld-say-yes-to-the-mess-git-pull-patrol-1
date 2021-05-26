@@ -66,12 +66,14 @@ image {
     }
     25% {
       opacity: 0.2;
+      color: yellow
     }
     50% {
         opacity: 0.5;
+        color:rgba(185, 40, 178, .5)
     }
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
 
