@@ -50,10 +50,6 @@ body {
   justify-content: center;
 }
 
-.border_img {
-  background-image: ;
-}
-
 .info_head {
   color: greenyellow;
   animation: blink 0.8s linear infinite;
