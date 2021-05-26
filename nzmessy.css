@@ -4,8 +4,6 @@ header {
    
     }
 
-
-    }
     a:hover {
         color: #ff0000;
 }
@@ -68,8 +66,7 @@ header {
     99%{    color:transparent;  }
     100%{   color: #000;    }
 }
-    
-}                    
+                       
 .clz {
     display: flex;
     flex-wrap: wrap;
