@@ -1,0 +1,196 @@
+header {
+    display: flex;
+    background-color: rgba(35, 175, 185, 0.596);
+    border: white inset 15px;
+}
+.navImg {
+    flex: 2;
+    max-width: fit-content;
+}
+.navImg img {
+    width: max-content;
+    animation: spin 0.5s;
+    animation-iteration-count: infinite;
+}
+.navBar {
+    flex: 3;
+    text-align: center;
+    font-size: 57px;
+    font-family:cursive;
+    place-self: center;
+}
+.navigation:hover {
+    animation: spin 0.7s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+.cimages:hover {
+    animation: spin 0.7s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+body {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Flag_of_the_Antarctic_Treaty.svg/1280px-Flag_of_the_Antarctic_Treaty.svg.png); 
+    background-color: blue;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 15em;
+}
+a {
+    color: white;
+}
+image {
+    border-radius: 1spx;
+}
+.country_image img {
+    max-width: 40em;
+}
+
+.clz {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box1{
+    display: flex;
+    background-color: snow;
+    border: solid white 1px;
+    border-radius: 26px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    width: auto;
+}
+.box1 img{
+    flex: 2;
+    border: solid white 1px;
+    border-radius: 26px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.box1-right-side{
+    display: contents;
+}
+.box2{
+    display: flex;
+    background-color: snow;
+    border: solid white 1px;
+    border-radius: 26px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    width: auto;
+}
+.box2 img{
+    flex: 2;
+    border: solid white 1px;
+    border-radius: 26px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.box2-right-side{
+    display: contents;
+}
+.box3{
+    display: flex;
+    background-color: snow;
+    border: solid white 1px;
+    border-radius: 26px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    width: auto;
+}
+.box3 img{
+    flex: 2;
+    border: solid white 1px;
+    border-radius: 26px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.box3-right-side{
+    display: contents;
+}
+.info_head {
+    color: darkblue;
+    font-size: 60px;
+    text-align: center;
+    animation-name: fontalicious;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+  }
+li {
+    font-family: fantasy;
+}
+@keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+.info {
+    font-size: 20px;
+    background-color: white;
+    background-image: url(https://media.giphy.com/media/FoVi0LDjy1XS8/giphy.gif);
+    border: solid white 1px;
+    border-radius: 26px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.name {
+    font-size: 50px;
+    color: darkblue;
+    border: dotted 11px;
+    background-image: url(https://media.giphy.com/media/12wteMTXxjLaVO/giphy.gif);
+}
+.country_name {
+    background-color:rgb(255, 255, 255);
+}
+@keyframes fontalicious {
+    0% {
+      font-family: helvetica;
+    }
+    10% {
+      font-family: times;
+    }
+    20% {
+      font-family: fantasy;
+    }
+    30% {
+      font-family: monospace;
+    }
+    40% {
+      font-family: Palatino;
+    }
+    50% {
+      font-family: Tahoma;
+    }
+    60% {
+      font-family: impact;
+    }
+    70% {
+      font-family: cursive;
+    }
+    80% {
+      font-family: monospace;
+    }
+    90% {
+      font-family: fantasy;
+    }
+    99% {
+      font-family: futura;
+    }
+    100% {
+    }
+}
+
+
+
